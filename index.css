@@ -8,10 +8,12 @@
 
 body  {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-content: center;
-    grid-gap: 10px;
-}
+    grid-template-columns: 1fr 2fr 1fr; /* create 3 columns, with the middle one taking 2 times the space */
+    grid-gap: 20px; /* add some gap between grid cells */
+    justify-content: center; /* center the grid horizontally */
+    margin: 0; /* remove default body margin */
+    height: 100vh; /* set the body height to 100% of the viewport */
+  }
 /* 
 body::after {
     content: "";
@@ -28,7 +30,7 @@ body::after {
     pointer-events: none;
   } */
 
-header {
+header {;
     background: #1B1B1B;
     border-radius: 0px 0px 8px 8px;
     display: flex;
@@ -85,17 +87,22 @@ header {
 
   #hero {
     background: #080808;
-    width: 200%;
+    width: 100vmax;
     height: 800px;
+  }
+
+  .hero_block {
     display: grid;
+    grid-row: 1;
+    grid-column: 2 / span 1; /* start from the 2nd column and take 1 column width */
     align-items: center;
     padding-left: 180px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .hero_case {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
@@ -190,3 +197,23 @@ header {
     transform: rotate(-0.004deg);
     flex-shrink: 0;
   } */
+
+  #case_studies {
+    width: 150vmax;
+    height: 100vh;
+    flex-shrink: 0;
+    padding: 200px 500px;
+    grid-column: 1 / -1; /* take the full width of the grid, from the 1st column to the last */
+    grid-row: 2;
+    justify-self: center; /* center the case studies block horizontally */
+  }
+
+  .case_studies_text h2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+  }
+
+  
