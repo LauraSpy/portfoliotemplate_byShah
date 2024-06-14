@@ -15,23 +15,22 @@ body  {
 header {;
     background: #1B1B1B;
     border-radius: 0px 0px 8px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    position: absolute; 
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1110px;
+    max-width: 1110px;
     height: 70px;
-    flex-shrink: 0;
+  }
+
+  nav {
+    display: grid;
+    grid-column: 2 / -1;
+    justify-content: center;
   }
   
   nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin: 0;
     padding: 0;
     display: inline-flex;
     align-items: flex-start;
@@ -69,17 +68,20 @@ header {;
 
   #hero{
     background: #080808;
-    width: 100vmax; /*100% of the width of th screen */
+    width: 100vmax; 
     height: 800px;
+    display: grid;
+    justify-content: center;
   }
 
   .hero_block {
-    height: 800px;
-    margin-top: 150px;
-    margin-left: 10em;
+    background-color: red;
+    height: 600px;
+    width: 1110px;
+    grid-column-start: 2;
   }
 
-  .hero_case {
+  /*.hero_case {
     width: 100%;
     gap: 30px;
     display: flex;
@@ -109,7 +111,7 @@ header {;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px; /* 171.429%
     letter-spacing: 0.14px;
   }
 
@@ -135,9 +137,9 @@ header {;
     height: 423px;
     flex-shrink: 0;
     margin-right: 180px;
-    border-radius: 50%; /* add this to create a circular shape */
-    background: url(./images/9059940e50e86fa8406b6c2b6aa018e1.jpg) no-repeat center; /* set the image as the background */
-    background-size: cover; /* scale the image to cover the entire circle */
+    border-radius: 50%; /* add this to create a circular shape
+    background: url(./images/9059940e50e86fa8406b6c2b6aa018e1.jpg) no-repeat center; /* set the image as the background 
+    background-size: cover; /* scale the image to cover the entire circle 
   }
 
   .work_with {
@@ -161,8 +163,8 @@ header {;
     width: 920px;
     height: 60px;
     justify-content: center;
-    /* align-items: flex-start; */
+    align-items: flex-start; 
     gap: 30px;
   }
-
+ */
 
