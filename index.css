@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +9,10 @@
 body  {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
     grid-gap: 10px;
 }
-
+/* 
 body::after {
     content: "";
     position: absolute;
@@ -22,7 +26,7 @@ body::after {
                            linear-gradient(to right, transparent 91.67% , rgba(255, 0, 0, 0.5) 91.67%, rgba(255, 0, 0, 0.5) 92.67%, transparent 92.67% );
     background-size: 83.33px 100vh;
     pointer-events: none;
-  }
+  } */
 
 header {
     background: #1B1B1B;
@@ -81,34 +85,30 @@ header {
 
   #hero {
     background: #080808;
-    width: 100vmax;
-    height: 700px;
+    width: 200%;
+    height: 800px;
+    display: grid;
+    align-items: center;
     padding-left: 180px;
-    padding-top: 211px;
+    padding-bottom: 50px;
   }
 
   .hero_case {
-    flex-shrink: 0;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 180px;
-  }
-
-    .hero_header {
-        display: flex;
-        width: 738px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-
-}
-
-  .header_title {
-    display: flex;
-    width: 538px;
-    flex-direction: column;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
     gap: 30px;
+    margin-top: 120px;
   }
+
+  .hero_header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
 
   .title {
     padding: 10px 0px;
@@ -119,10 +119,6 @@ header {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-  }
-
-  .intro {
-    width: 492px;
   }
 
   .intro p {
@@ -154,10 +150,43 @@ header {
 
   .photo_hero {
     width: 416px;
-    /* height: 623px; */
+    height: 423px;
     flex-shrink: 0;
     margin-right: 180px;
     border-radius: 50%; /* add this to create a circular shape */
     background: url(./images/9059940e50e86fa8406b6c2b6aa018e1.jpg) no-repeat center; /* set the image as the background */
     background-size: cover; /* scale the image to cover the entire circle */
   }
+
+  .work_with {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .work_with p {
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .clients_logo {
+    display: flex;
+    width: 920px;
+    height: 60px;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 30px;
+    flex-shrink: 0;
+  }
+/* 
+  .clients_logo svg {
+    width: 82.319px;
+    height: 20px;
+    transform: rotate(-0.004deg);
+    flex-shrink: 0;
+  } */
