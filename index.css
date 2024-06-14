@@ -6,165 +6,97 @@
     padding: 0;
 }
 
-body  {
-    display: grid;
-    grid-template-columns: repeat(12, 65px); /* grid area */
-    gap: 30px;
-  }
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1%;
+  background-color: #080808;
+}
 
-header {;
-    background: #1B1B1B;
-    border-radius: 0px 0px 8px 8px;
-    position: absolute; 
-    top: 0;
-    max-width: 1110px;
-    height: 70px;
-  }
+header {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 11;
+  margin-top: 20%;
+}
 
-  nav {
-    display: grid;
-    grid-column: 2 / -1;
-    justify-content: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 70px;
-    margin: 24px 95px;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    color: #9C9C9C;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.14px;
-  }
-  
-  .logo {
-    width: 107.542px;
-    height: 17px;
-    flex-shrink: 0;
-  }
-  
-  .logos img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
+.hero {
+  margin-bottom: 10%;
+}
 
-  #hero{
-    background: #080808;
-    width: 100vmax; 
-    height: 800px;
-    display: grid;
-    justify-content: center;
-  }
+.hero_block {
+  display: flex;
+  margin-bottom: 10%;
+  gap: 15%;
+}
 
-  .hero_block {
-    background-color: red;
-    height: 600px;
-    width: 1110px;
-    grid-column-start: 2;
-  }
+.title {
+  padding: 10px 0px;
+  gap: 10px;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
 
-  /*.hero_case {
-    width: 100%;
-    gap: 30px;
-    display: flex;
-  }
+.intro p {
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  letter-spacing: 0.14px;
+  margin-top: 5%;
+}
 
-  .hero_header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
+.hero_header button {
+  display: flex;
+  padding: 21px 64px;
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #3F8E00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.50);
+  color: #FFF;
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5%;
+}
 
-  .title {
-    padding: 10px 0px;
-    gap: 10px;
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
+.photo_hero {
+  width: 416px;
+  height: 423px;
+  flex-shrink: 0;
+  border-radius: 50%; 
+  background: url(./images/9059940e50e86fa8406b6c2b6aa018e1.jpg) no-repeat center; 
+  background-size: cover;
+}
 
-  .intro p {
-    color: #9C9C9C;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429%
-    letter-spacing: 0.14px;
-  }
+.work_with {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
-  #hero button {
-    display: flex;
-    padding: 21px 64px;
-    flex-basis: auto;
-    gap: 10px;
-    border-radius: 4px;
-    border: 1px solid #62BA1B;
-    background: #3F8E00;
-    box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.50);
-    color: #FFF;
-    font-family: "IBM Plex Mono";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+.work_with p {
+  color: #FFF;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-  .photo_hero {
-    width: 416px;
-    height: 423px;
-    flex-shrink: 0;
-    margin-right: 180px;
-    border-radius: 50%; /* add this to create a circular shape
-    background: url(./images/9059940e50e86fa8406b6c2b6aa018e1.jpg) no-repeat center; /* set the image as the background 
-    background-size: cover; /* scale the image to cover the entire circle 
-  }
-
-  .work_with {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  .work_with p {
-    color: #FFF;
-    font-family: "IBM Plex Mono";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .clients_logo {
-    display: flex;
-    width: 920px;
-    height: 60px;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 30px;
-  }
- */
+.clients_logo {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  gap: 30px;
+}
 
