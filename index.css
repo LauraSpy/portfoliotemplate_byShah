@@ -8,27 +8,9 @@
 
 body  {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* create 3 columns, with the middle one taking 2 times the space */
-    grid-gap: 20px; /* add some gap between grid cells */
-    justify-content: center; /* center the grid horizontally */
-    margin: 0; /* remove default body margin */
-    height: 100vh; /* set the body height to 100% of the viewport */
+    grid-template-columns: repeat(12, 65px); /* grid area */
+    gap: 30px;
   }
-/* 
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5%;
-    background-image: linear-gradient(to right, transparent 83.33px, rgba(255, 0, 0, 0.5) 83.33px, rgba(255, 0, 0, 0.5) 84.33px, transparent 84.33px),
-                           linear-gradient(to right, transparent 16.67% , rgba(255, 0, 0, 0.5) 16.67%, rgba(255, 0, 0, 0.5) 17.67%, transparent 17.67% ),
-                           linear-gradient(to right, transparent 91.67% , rgba(255, 0, 0, 0.5) 91.67%, rgba(255, 0, 0, 0.5) 92.67%, transparent 92.67% );
-    background-size: 83.33px 100vh;
-    pointer-events: none;
-  } */
 
 header {;
     background: #1B1B1B;
@@ -85,37 +67,30 @@ header {;
     margin-right: 10px;
   }
 
-  #hero {
+  #hero{
     background: #080808;
-    width: 100vmax;
+    width: 100vmax; /*100% of the width of th screen */
     height: 800px;
   }
 
   .hero_block {
-    display: grid;
-    grid-row: 1;
-    grid-column: 2 / span 1; /* start from the 2nd column and take 1 column width */
-    align-items: center;
-    padding-left: 180px;
-    padding-bottom: 30px;
+    height: 800px;
+    margin-top: 150px;
+    margin-left: 10em;
   }
 
   .hero_case {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
     gap: 30px;
-    margin-top: 120px;
+    display: flex;
   }
 
   .hero_header {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
 
   .title {
     padding: 10px 0px;
@@ -169,7 +144,7 @@ header {;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .work_with p {
@@ -188,32 +163,6 @@ header {;
     justify-content: center;
     /* align-items: flex-start; */
     gap: 30px;
-    flex-shrink: 0;
-  }
-/* 
-  .clients_logo svg {
-    width: 82.319px;
-    height: 20px;
-    transform: rotate(-0.004deg);
-    flex-shrink: 0;
-  } */
-
-  #case_studies {
-    width: 150vmax;
-    height: 100vh;
-    flex-shrink: 0;
-    padding: 200px 500px;
-    grid-column: 1 / -1; /* take the full width of the grid, from the 1st column to the last */
-    grid-row: 2;
-    justify-self: center; /* center the case studies block horizontally */
   }
 
-  .case_studies_text h2 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: black;
-  }
 
-  
