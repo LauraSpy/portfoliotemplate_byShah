@@ -13,11 +13,13 @@ body {
   background-color: #080808;
 }
 
+/** HEADER **/
+
 header {
   display: grid;
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-column-end: 11;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .hero {
@@ -100,3 +102,49 @@ header {
   gap: 30px;
 }
 
+/* NAVIGATION */
+
+nav {
+  display: grid;
+  grid-column: 2 / -2;
+  justify-content: center;
+  background-color: #1B1B1B;
+  border-radius: 0px 0px 8px 8px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 80px;
+  margin: 24px 95px;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+
+.logo {
+  width: 107.542px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.logos img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
