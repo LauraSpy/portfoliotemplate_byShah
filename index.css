@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
-    margin: 0;
+    margin: 0; /* initialise at 0 the default parameters */
     padding: 0;
 }
 
@@ -387,8 +387,8 @@ nav a {
 
 .testimonials_block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* draw the column for each part */
+  grid-template-rows: 1fr 1fr; /* and the rows */
   justify-items: center;
   margin: 5%;
 }
@@ -397,10 +397,9 @@ nav a {
   width: 445px;
   height: 212px;
   border-radius: 6px;
-  border: 1px solid transparent;
+  border: 1px solid transparent; /* gradient on the border : first make the border */
   background: linear-gradient(#080808, #080808) padding-box,
-              linear-gradient(to right, #484848, #080808) border-box;
-  /* border-image: linear-gradient(to right, #484848, #1B1B1B) 1; */
+              linear-gradient(to right, #484848, #080808) border-box; /* then had the gradient with a background (this way is made to make sure the radius is added too */
   padding: 8% 0 0 5%;
   margin-bottom: 10%;
   overflow: hidden;
@@ -607,12 +606,12 @@ nav a {
   margin-top: 5%;
 }
 
-/* Styles de base pour le formulaire */
+/* form */
 form {
   color: white; /* Texte en blanc */
 }
 
-/* Styles pour les labels */
+/* labels */
 label {
   margin-bottom: 10px;
   color: #FFF;
@@ -623,7 +622,7 @@ label {
   line-height: normal;
 }
 
-/* Styles pour les champs de saisie */
+/* input */
 input[type="email"],
 input[type="tel"],
 textarea {
@@ -645,7 +644,7 @@ textarea {
   height: 120px;
 }
 
-/* Styles pour le bouton submit */
+/* submit button */
 input[type="submit"] {
   border-radius: 4px;
   border: 1px solid #62BA1B;
