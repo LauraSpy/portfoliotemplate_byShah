@@ -435,13 +435,13 @@ nav a {
 .testimonials_photo {
   width: 65px;
   height: 65px;
-  border-radius: 50%;
+  border-radius: 50%; /* making the circle for the image */
   background: url(./images/lady1.png) no-repeat center; 
-  background-size: cover;
+  background-size: cover; /* make sure the image goes full into the case */
 }
 
 .quote {
-  position: absolute;
+  position: absolute; /* make sure the quote goes on top of the border */
   color: #FFF;
   font-family: Raleway;
   font-size: 100px;
@@ -449,7 +449,7 @@ nav a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1px;
-  transform: translateY(-76px);
+  transform: translateY(-76px); /* putting the " floating on the border */
 }
 
 /** RECENT WORK **/
@@ -500,9 +500,9 @@ nav a {
 
 .recent_work_case {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* placement of both the part */
   justify-items: center;
-  margin: 5% 15% 0 15%;
+  margin: 5% 15% 0 15%; /* add of space between the part and center them */
 }
 
 .recent_work_case h3 {
@@ -523,7 +523,7 @@ nav a {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.14px;
-  padding-top: 5%;
+  padding-top: 5%; /* space between the top and bottom */
   padding-bottom: 5%;
 }
 
@@ -553,5 +553,140 @@ nav a {
   width: 445px;
   height: 300px;
   border-radius: 5px;
-  background: lightgray 50%;
+  background: lightgray 50%; /* background shadow effect */
+}
+
+/** CONTACT **/
+
+#contact {
+  background: #080808;
+  width: 1280px;
+  height: 704px;
+  grid-row: 6;
+  grid-column: span 12;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.contact_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}
+
+.contact_heading h2 {
+  color: white;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.contact_heading p {
+  width: 570px;
+  color: #9C9C9C;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.14px;
+}
+
+.contact_form {
+  display: flex;
+  width: 350px;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+}
+
+/* Styles de base pour le formulaire */
+form {
+  color: white; /* Texte en blanc */
+}
+
+/* Styles pour les labels */
+label {
+  margin-bottom: 10px;
+  color: #FFF;
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* Styles pour les champs de saisie */
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #D8D8D8; /* Bordure blanche */
+  border-radius: 3px;
+  background-color: #F8F8F8; /* Arrière-plan des champs */
+  color: white; /* Texte en blanc */
+}
+
+input {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+}
+
+textarea {
+  height: 120px;
+}
+
+/* Styles pour le bouton submit */
+input[type="submit"] {
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #3F8E00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.30);
+  padding: 10px 24px;
+  color: #FFF;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838; /* Changement de couleur au survol */
+}
+
+/** FOOTER **/
+
+footer {
+  grid-row: 7;
+  grid-column: span 12;
+  background-color: #1B1B1B;
+  height: 100px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5%;
+}
+
+.footer h3 {
+  color: #9C9C9C;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
 }
