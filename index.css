@@ -397,11 +397,13 @@ nav a {
   width: 445px;
   height: 212px;
   border-radius: 6px;
-  border: 1px solid #484848;
-  padding: 2% 2% 0 5%;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid transparent;
+  background: linear-gradient(#080808, #080808) padding-box,
+              linear-gradient(to right, #484848, #080808) border-box;
+  /* border-image: linear-gradient(to right, #484848, #1B1B1B) 1; */
+  padding: 8% 0 0 5%;
   margin-bottom: 10%;
+  overflow: hidden;
 }
 
 .testimonials_square p {
@@ -447,5 +449,5 @@ nav a {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1px;
-  transform: translateY(-45px);
+  transform: translateY(-76px);
 }
