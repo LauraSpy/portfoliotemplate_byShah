@@ -157,138 +157,138 @@ nav a {
   grid-column: span 12;
 }
 
-.name {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
-  width: 897px;
-  padding: 5%;
-}
+  .name {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 897px;
+    padding: 5%;
+  }
 
-.name h2{
-  color: #080808;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+  .name h2{
+    color: #080808;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
 
-.name p {
-  text-align: center;
-  width: 50%;
-  color: #9C9C9C;
-  text-align: center;
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.14px;
-}
+  .name p {
+    text-align: center;
+    width: 60%;
+    color: #9C9C9C;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.14px;
+  }
 
-.work1, .work2, .work3 {
-  width: 892px;
-  height: 300px;
-  display: flex;
-  margin: auto;
-  margin-bottom: 5%;
-  gap: 10%;
-}
+  .work1, .work2, .work3 {
+    width: 892px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5%;
+    gap: 10%;
+  }
 
-.work_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
+  .work_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-.work_textarea {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10%;
-}
+  .work_textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
 
-.work_textarea h3 {
-  padding: 5% 0;
-  color: #080808;
-  font-family: Raleway;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
+  .work_textarea h3 {
+    padding: 5% 0;
+    color: #080808;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
 
-.work_textarea p {
-  color: #9C9C9C;
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  letter-spacing: 0.14px;
-}
+  .work_textarea p {
+    color: #9C9C9C;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.14px;
+  }
 
-.work_image img {
-  width: 445px;
-  height: 300px;
-  border-radius: 5px;
-}
+  .work_image img {
+    width: 445px;
+    height: 300px;
+    border-radius: 5px;
+  }
 
 /** BUTTON CASE STUDIES **/
 
-.work1 button {
-  border-radius: 4px;
-  border: none;
-  background: #FFA217;
-  box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
-  color: #FFF;
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: inline-flex;
-  padding: 10px 24px;
-  align-items: center;
-  gap: 10px;
-}
+  .work1 button {
+    border-radius: 4px;
+    border: none;
+    background: #FFA217;
+    box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 10px;
+  }
 
-.work2 button {
-  border-radius: 4px;
-  border: none;
-  background: #000AFF;
-  box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
-  color: #FFF;
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: inline-flex;
-  padding: 10px 24px;
-  align-items: center;
-  gap: 10px;
-}
+  .work2 button {
+    border-radius: 4px;
+    border: none;
+    background: #000AFF;
+    box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 10px;
+  }
 
-.work3 button {
-  border-radius: 4px;
-  border: none;
-  background: #2AB090;
-  box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
-  color: #FFF;
-  font-family: "IBM Plex Mono";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  display: inline-flex;
-  padding: 10px 24px;
-  align-items: center;
-  gap: 10px;
-}
+  .work3 button {
+    border-radius: 4px;
+    border: none;
+    background: #2AB090;
+    box-shadow: 0px 8px 30px 0px rgba(42, 176, 144, 0.10);
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 10px;
+  }
 
 
 /** TAG **/
@@ -339,4 +339,113 @@ nav a {
   padding: 0px 10px;
   align-items: flex-start;
   gap: 10px;
+}
+
+
+/** TESTIMONIALS **/
+
+#testimonials {
+  background: #080808;
+  width: 1280px;
+  height: 804px;
+  grid-row: 4;
+  grid-column: span 12;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.testimonials_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 10px;
+}
+
+.testimonials_heading h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.testimonials_heading p {
+  width: 570px;
+  color: #9C9C9C;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.14px;
+}
+
+.testimonials_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin: 5%;
+}
+
+.testimonials_square {
+  width: 445px;
+  height: 212px;
+  border-radius: 6px;
+  border: 1px solid #484848;
+  padding: 2% 2% 0 5%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.testimonials_square p {
+  width: 409px;
+  color: #9C9C9C;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.14px;
+  margin-bottom: 2%;
+}
+
+.testimonials_image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.testimonials_photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: url(./images/lady1.png) no-repeat center; 
+  background-size: cover;
+}
+
+.quote {
+  position: absolute;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  transform: translateY(-45px);
 }
